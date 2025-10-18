@@ -1,0 +1,57 @@
+html, body {
+    background: burlywood;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 1400px) {
+    .custom-container {
+        max-width: 60%;
+        margin: 0 auto;
+        
+    }
+}
+
+#wrapper {
+    background: palevioletred;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 50%;
+    padding: 30px;
+    margin: auto 0;
+    border-radius: 4px;
+}
+
+figure img {
+    border: 3px solid darkolivegreen;
+    border-radius: 50%;
+}
+
+section li {
+    list-style: none;
+    color: #333333;
+    
+}
+
+section {
+    margin-top: 8px;
+}
+
+.date {
+    font-weight: bold;
+}
+
+nav a:focus {
+    background: burlywood;
+    padding: 6px;
+}
