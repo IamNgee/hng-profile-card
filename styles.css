@@ -34,7 +34,10 @@ body {
 
 figure img {
     border: 3px solid darkolivegreen;
+    width: 100%;
     border-radius: 50%;
+    max-width: 80px;
+    height: auto;
 }
 
 section li {
@@ -55,3 +58,10 @@ nav a:focus {
     background: burlywood;
     padding: 6px;
 }
+
+/* @media (min-width: 768px) {
+  figure img {
+    width: 100px;
+    height: 8vh;
+  }
+} */
