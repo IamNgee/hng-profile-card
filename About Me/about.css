@@ -1,0 +1,38 @@
+
+html, body {
+    background: burlywood;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+    
+.wrapper {
+    border: 3px solid smoke;
+    background: #eee;
+    border-radius: 4px;
+    width: 50%;
+}
+
+.main {
+    margin: 2em;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#success-message {
+    display: block;
+}
+
+#submit {
+    text-align: center;
+    margin: 0.4rem;
+}
+
+.required::after {
+  content: " *";
+  color: red;
+}

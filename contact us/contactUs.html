@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cStyles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body class="z-0">
+    
+    <div class="wrapper container z-3">
+        <div class="row">
+            <div class="col-xs-6">
+                
+                <form class="form">
+                    <h2>Contact Us Page</h2>
+                    <div data-testid="test-contact-name">
+                        <label for="username" class="form-label required fw-bold">Full Name:</label>
+                        <input type="text" required placeholder="e.g Ravi" id="username" aria-describedby="nameHelp" class="form-control">
+                        <span id="username-error" data-testid="test-contact-error-username" class="error-message"></span>
+                    </div>
+                    <div data-testid="test-contact-email">
+                        <label for="email" class="form-label required fw-bold">Email:</label>
+                        <input type="email" required placeholder="Ravi@gmail.com" id="email" aria-describedby="emailHelp" class="form-control">
+                        <span id="email-error" data-testid="test-contact-error-email" class="error-message"></span>
+
+                    </div>
+                    <div data-testid=" test-contact-subject">
+                        <label for="subject" class="form-label required fw-bold">Subject:</label>
+                        <input type="text" required placeholder="Enter the subject" id="subject" aria-describedby="subject" class="form-control">
+                        <span id="subject-error" data-testid="test-contact-error-subject" class="error-message"></span>
+
+                    </div>
+                    <div data-testid=" test-contact-message">
+                        <label for="message" class="form-label required fw-bold">Message:</label>
+                        <input type="text" required minlength="10" placeholder="Type your massage" id="message" aria-describedby="message" class="form-control">
+                        <span id="message-error" data-testid="test-contact-error-message" class="error-message"></span>
+                        <div id="form-text" class="form-text d-none">Message must be at least 10 characters.</div>
+                    </div>
+                    <div data-testid="test-contact-submit" id="submit">
+                        <button type="submit" class="btn btn-primary m-2">Submit</button>
+                        <span id="submit-error" data-testid="test-contact-error-submit" class="error-message"></span>
+
+                    </div>
+                    <!-- <p id="success" data-testid="test-contact-success">Thank you! Your message has been sent.</p> -->
+                    <div id="success-message" tabindex="-1" class="alert alert-success mt-3 d-none" data-testid="test-contact-success">
+                        Thank you! Your message has been sent.
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
