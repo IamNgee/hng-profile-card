@@ -11,7 +11,11 @@ html, body {
     background: #eee;
     border-radius: 4px;
     width: 50%;
+    margin-top: 3rem; 
+    margin-bottom: 3rem; 
+    padding: 3rem 2rem; 
 }
+
 
 .main {
     margin: 2em;
@@ -21,6 +25,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 3rem 0;
 }
 
 #success-message {
